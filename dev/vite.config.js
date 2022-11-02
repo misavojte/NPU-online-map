@@ -1,5 +1,7 @@
 export default {
   build: {
-    sourcemap: true,
-  }
+    sourcemap: true
+  },
+  // uncomment when building for GitHub Pages
+  // base: '/NPU-online-map/'
 }
