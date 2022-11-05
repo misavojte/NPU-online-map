@@ -1,0 +1,128 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+header {
+    background: #d92505;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    color: white;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 25%);
+    z-index: 10;
+}
+
+.header--block {
+    border-left: 1px solid #FFFFFF33;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 1.15em;
+    padding-right: 1.15em;
+    overflow: hidden;
+    -o-border-image: linear-gradient(to bottom, transparent, transparent 20%, #FFFFFF33 20%, #FFFFFF33 80%, transparent 80%) 0 100%;
+    border-image: linear-gradient(to bottom, transparent, transparent 20%, #FFFFFF33 20%, #FFFFFF33 80%, transparent 80%) 0 100%;
+}
+
+.header--block:first-child {
+    border: none;
+    flex-shrink: 0;
+}
+
+.header--block:last-child {
+    margin-left: auto;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    height: 30px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 200;
+    text-overflow: ellipsis;
+    break-after: avoid;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+h2 {
+    margin-block: 0.5em;
+    display: inline-flex;
+    gap: 0.5em;
+    align-items: center;
+    font-size: 1.25em;
+}
+
+h2>svg {
+    fill: #d92505;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    transition: all 1s;
+}
+
+canvas {
+    transition: all 1s;
+}
+
+main {
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    color: #56585c;
+}
+
+a {
+    color: #d92505;
+}
+
+.icon-wrapper {
+    display: flex;
+    padding: 0.25em;
+    background: #d92505;
+    color: white;
+    border-radius: 50%;
+}
+
+.modal {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    width: 350px;
+    max-width: 100%;
+    background: white;
+    padding: 1em;
+    height: 100%;
+    box-sizing: border-box;
+    font-weight: 200;
+    animation: slideModal 0.4s forwards;
+    box-shadow: rgb(0 0 0 / 25%) 0 2px 4px;;
+}
+
+@-webkit-keyframes slideModal {
+    0% { right: -370px;}
+    100% { right: 0;}
+}

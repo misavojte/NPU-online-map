@@ -5,25 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34787ef1-3946-4852-bf63-ebdcc0b6a239" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/assets/img/NPU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/css/criticalStyles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/vite.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/index.4278b61f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/index.4278b61f.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/index.5c51e096.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dev/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,6 +31,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2H04dA8JEjDtNaSRT6jwwMwu83e" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -43,17 +46,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/michaelavojtechovska/Desktop/UPOL/3/ACART/project",
+    "last_opened_file_path": "/Users/michaelavojtechovska/Desktop/UPOL/3/ACART/NPU-online-map/dev/assets/img",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dev/assets/img" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -69,6 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667408752917</updated>
       <workItem from="1667408755420" duration="3390000" />
+      <workItem from="1667640311820" duration="23232000" />
     </task>
     <servers />
   </component>
