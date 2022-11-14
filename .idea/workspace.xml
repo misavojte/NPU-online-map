@@ -4,13 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34787ef1-3946-4852-bf63-ebdcc0b6a239" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dev/assets/img/NPU.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/css/criticalStyles.css" afterDir="false" />
+    <list default="true" id="34787ef1-3946-4852-bf63-ebdcc0b6a239" name="Changes" comment="first app layout">
+      <change afterPath="$PROJECT_DIR$/dev/js/controller/AbstractController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/js/controller/LayerControlItemController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/js/controller/MenuController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/js/controller/ModalController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/js/model/AbstractModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/js/model/LayerControlArrayModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/js/model/LayerControlItemModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/js/model/MenuModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/js/model/ModalModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/js/view/AbstractView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/js/view/LayerControlItemView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/js/view/MenuView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/js/view/ModalView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/css/criticalStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/criticalStyles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dev/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -33,7 +45,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2H04dA8JEjDtNaSRT6jwwMwu83e" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -41,22 +53,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/michaelavojtechovska/Desktop/UPOL/3/ACART/NPU-online-map/dev/assets/img",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/michaelavojtechovska/Desktop/UPOL/3/ACART/NPU-online-map/dev/assets/img&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dev/assets/img" />
@@ -75,8 +87,18 @@
       <option name="presentableId" value="Default" />
       <updated>1667408752917</updated>
       <workItem from="1667408755420" duration="3390000" />
-      <workItem from="1667640311820" duration="23232000" />
+      <workItem from="1667640311820" duration="26267000" />
+      <workItem from="1668077083551" duration="22639000" />
+      <workItem from="1668438578481" duration="9644000" />
     </task>
+    <task id="LOCAL-00001" summary="first app layout">
+      <created>1667671732766</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667671732766</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,5 +141,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first app layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="first app layout" />
   </component>
 </project>
