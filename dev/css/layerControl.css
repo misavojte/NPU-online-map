@@ -1,0 +1,48 @@
+.layer-control {
+    display: flex;
+    gap: 12px;
+    align-content: center;
+    align-items: center;
+    padding-block: 10px;
+}
+
+.layer-control > img {
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    background: gray;
+    border-radius: 7px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.layer-control > div {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    font-size: 0.8em;
+    justify-items: start;
+    align-items: center;
+    align-content: center;
+    grid-auto-rows: 1fr;
+}
+
+.layer-control > div > strong {
+    grid-column: span 2;
+}
+
+.layer-control input[type="range"] {
+    width: 100%;
+}
+
+input {
+    margin: 0;
+}
+
+button {
+    color: #56585c;
+    background: #f8f7f7;
+    font-size: 10px;
+    border: 1px solid #00000012;
+    border-radius: 4px;
+    box-shadow: #00000012 0 2px 4px;
+}

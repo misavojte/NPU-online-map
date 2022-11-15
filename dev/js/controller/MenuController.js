@@ -11,8 +11,7 @@ export class MenuController extends AbstractController {
     }
 
     handleClickEvent(e) {
-        if (e.target.closest('#m-about')) {
-            this.model.update({type: 'openModal', body: 'about'});
-        }
+        const id = e.target.closest('.js-click').id.substring(2);
+        this.postUpdate('toggleModal', {'open': true, 'id': id});
     }
 }

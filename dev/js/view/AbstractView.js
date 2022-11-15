@@ -1,5 +1,7 @@
 export class AbstractView {
 
+    isView = true;
+
     /**
      *
      * @param {AbstractController} controller
@@ -32,6 +34,6 @@ export class AbstractView {
     }
 
     handleUpdate(data) {
-        console.warn("update method in view not implemented", this)
+        console.warn("update method in view not implemented", this, data)
     }
 }

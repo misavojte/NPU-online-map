@@ -1,6 +1,10 @@
+import {AbstractView} from "../view/AbstractView";
+import {UpdateMessage} from "../core/UpdateMessage";
+
 export class AbstractModel {
 
     observers = [];
+    isView = false;
 
     /**
      *
@@ -28,29 +32,50 @@ export class AbstractModel {
 
     /**
      *
-     * @param data
+     * @param {UpdateMessage} msg
      * Loops over this.observers and calls the update method on each observer.
      * The state object will call this method everytime it is updated.
      */
-    notify(data) {
+    notify(msg) {
         if (this.observers.length > 0) {
-            this.observers.forEach((observer) => observer.update(data));
+            this.observers.forEach((observer) => {
+                if(msg.isViewOnly) {
+                    if(!observer.isView) {console.log("not a view", observer, this); return}
+                }
+                let childMsg = msg.createChildMessage();
+                observer.update(childMsg)
+            });
         }
     }
 
     /**
      * 
-     * @param data
-     * Gets called by the Subject::notify method.
+     * @param {UpdateMessage} msg
+     * Gets called by the AbstractModel::notify method.
+     * Firstly the update is handled. If it returns TRUE, notify method is called.
      */
-    update(data) {
+    update(msg) {
         console.log('update received', this)
-        this.handleUpdate(data);
-        this.notify(data);
+        if (this.handleUpdate(msg)) this.notify(msg);
     }
 
-    handleUpdate(data) {
-        console.warn("handleUpdate method was not implemented in model", this)
+    /**
+     *
+     * @param {UpdateMessage} msg
+     */
+    handleUpdate(msg) {
+        console.warn("handleUpdate method was not implemented in model", this);
+        return false;
+    }
+
+    /**
+     *
+     * @param {string} type
+     * @param {Object} body
+     * @param {boolean} isViewOnly
+     */
+    postNotification(type, body, isViewOnly = true) {
+        this.notify(new UpdateMessage(type, body, isViewOnly))
     }
 
 }

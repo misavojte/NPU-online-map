@@ -12,7 +12,7 @@ export class ModalController extends AbstractController {
 
     handleClickEvent(e) {
         if (e.target.closest('.modal-close')) {
-            this.model.update('closeModal');
+            this.postUpdate('toggleModal',  {'open': false}, true)
             return;
         }
         this.handleDefaultEvent(e);

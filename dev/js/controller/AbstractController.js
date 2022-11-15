@@ -1,3 +1,5 @@
+import {UpdateMessage} from "../core/UpdateMessage";
+
 export class AbstractController {
 
     /**
@@ -28,6 +30,16 @@ export class AbstractController {
 
     handleDefaultEvent(e) {
         console.warn('Event type not registered in controller', this, e)
+    }
+
+    /**
+     *
+     * @param {string} type
+     * @param {Object} body
+     * @param {boolean} isViewOnly
+     */
+    postUpdate(type, body, isViewOnly = false) {
+       this.model.update(new UpdateMessage(type, body, isViewOnly))
     }
 
 }
